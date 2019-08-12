@@ -1,5 +1,6 @@
 package com.zcf.springservice.pojo;
 
+
 import java.io.Serializable;
 
 public class User implements Serializable {

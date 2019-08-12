@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 8091
 
 spring:
   datasource:
     name: blog
-    url: dbc:mysql://127.0.0.1:3306/portal
+    url: jdbc:mysql://127.0.0.1:3306/portal
     username: root
     password: 123456
     # 使用druid数据源

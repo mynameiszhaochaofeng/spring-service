@@ -32,6 +32,15 @@
     from t_user
     where user_id = #{userId,jdbcType=VARCHAR}
   </select>
+  <!--
+    通过用户名查询用户信息
+  -->
+  <select id="selectByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_user
+    where user_name = #{userName,jdbcType=VARCHAR}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     <!--
       WARNING - @mbggenerated
